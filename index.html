@@ -19,26 +19,40 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="header"> 
+<div class="header"> 
     <div class="container">  
-            <div class="row">
-                <div class="col-sm-2">
-                    <a href="#">
-                        <img src="./img/logosty.png" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-10">
-                    <ul class="menu">
-                        <li> <a href="#"> Kişisel Bakım</a></li>
-                        <li><a href="#"> Spor-Fitness</a></li>
-                        <li><a href="#"> Randevu Sistemi</a></li>
-                        <li><a href="#"> Blog</a></li>
-                        <li><a href="#"> Kariyer</a></li>
-                    </ul>
-                </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <a href="#">
+                    <img src="./img/logosty.png" alt="">
+                </a>
+            </div>
+            <div class="col-sm-10">
+                <ul class="menu">
+                    <li> <a href="#"> Kişisel Bakım</a></li>
+                    <li><a href="#"> Spor-Fitness</a></li>
+                    <li><a href="#"> Randevu Sistemi</a></li>
+                    <li><a href="#"> Blog</a></li>
+                    <li><a href="#"> Kariyer</a></li>
+                </ul>
             </div>
         </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
     </div>
+</div>
+<div class='col-sm-12'>
+    <ul class="mobile-menu">
+        <li> <a href="#"> Kişisel Bakım</a></li>
+        <li><a href="#"> Spor-Fitness</a></li>
+        <li><a href="#"> Randevu Sistemi</a></li>
+        <li><a href="#"> Blog</a></li>
+        <li><a href="#"> Kariyer</a></li>
+    </ul>
+</div>
 <div class="container">
     <div class="white-bg">
             <div class="mb-2">
@@ -67,7 +81,7 @@
                     <option value="tarakli" data-select2-id="96"> Taraklı</option>
                 </select>
             </div>
-            <div class="form-group col-sm-5" data-select2-id="81">
+            <div class="form-group col-sm-5 pb-0" data-select2-id="81">
                 <label for="salon">Salon Tipi Seçiniz</label>
                 <select class="js-example-basic-single form-control select2-hidden-accessible"  name="salon" id="salon" data-select2-id="salon" tabindex="-1" aria-hidden="true" >
                     <option value="serdivan" data-select2-id="2"> Kadın Kuaförü</option>
@@ -77,85 +91,87 @@
                     <option value="ferizli" data-select2-id="85"> Solaryum Salonu</option>
                 </select>
             </div>
-            <div class="col-sm-2">
-                <button class="search-button"> BUL</button>
+            <div class="col-sm-2 form-group mb-1 text-center pt-3">
+                <br />
+                <br />
+                <button class="search-button py-2"> BUL</button>
             </div>
         </div>
     </div>
 </div>
-    <div class="container" >
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="card">
-                            <img class="card-img-top" src="./img/diamond.jpg" width="100%" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Diamond 786</h4>
-                            <p class="card-text">Erkek Kuaförü/Kadın Kuaförü</p>
-                            <h6>Serdivan/Sakarya</h6>
-                        </div>
-                    </div>   
-                </div>
-                <div class="col-sm-6">
-                    <div class="card">
-                            <img class="card-img-top" src="./img/matmazel.png" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Matmazel Kuaför</h4>
-                            <p class="card-text">Güzellik Merkezi, Kadın Kuaförü</p>
-                            <h6>Adapazarı/Sakarya</h6>
-                        </div>
-                    </div>   
-                </div>
-            </div>
-        </div>
 <div class="container" >
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card">
-                        <img class="card-img-top" src="./img/fc.jpg" width="100%" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Fatih & Ceren Kuaför</h4>
-                        <p class="card-text">Kadın Kuaförü</p>
-                        <h6>Adapazarı/Sakarya</h6>
-                    </div>
-                </div>   
-            </div>
-            <div class="col-sm-6">
-                <div class="card">
-                        <img class="card-img-top" src="./img/salonlogosu.jpg" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Zorla Güzellik Salonu</h4>
-                        <p class="card-text">Kadın Kuaförü / Güzellik Merkezi</p>
-                        <h6>Adapazarı/Sakarya</h6>
-                    </div>
-                </div>   
-            </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                    <img class="card-img-top" src="./img/diamond.jpg" width="100%" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Diamond 786</h4>
+                    <p class="card-text">Erkek Kuaförü/Kadın Kuaförü</p>
+                    <h6>Serdivan/Sakarya</h6>
+                </div>
+            </div>   
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                    <img class="card-img-top" src="./img/matmazel.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Matmazel Kuaför</h4>
+                    <p class="card-text">Güzellik Merkezi, Kadın Kuaförü</p>
+                    <h6>Adapazarı/Sakarya</h6>
+                </div>
+            </div>   
         </div>
     </div>
+</div>
 <div class="container" >
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card">
-                        <img class="card-img-top" src="./img/swiss.jpg" width="100%" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Swiss Barber</h4>
-                        <p class="card-text">Erkek Kuaförü/Kadın Kuaförü</p>
-                        <h6>Adapazarı/Sakarya</h6>
-                    </div>
-                </div>   
-            </div>
-            <div class="col-sm-6">
-                <div class="card">
-                        <img class="card-img-top" src="./img/boutique.png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Boutique Fit Lady</h4>
-                        <p class="card-text">Spor Salonu, Pilates Stüdyosu</p>
-                        <h6>Serdivan/Sakarya</h6>
-                    </div>
-                </div>   
-            </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                    <img class="card-img-top" src="./img/fc.jpg" width="100%" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Fatih & Ceren Kuaför</h4>
+                    <p class="card-text">Kadın Kuaförü</p>
+                    <h6>Adapazarı/Sakarya</h6>
+                </div>
+            </div>   
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                    <img class="card-img-top" src="./img/salonlogosu.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Zorla Güzellik Salonu</h4>
+                    <p class="card-text">Kadın Kuaförü / Güzellik Merkezi</p>
+                    <h6>Adapazarı/Sakarya</h6>
+                </div>
+            </div>   
         </div>
     </div>
-    <div class="aciklama">
+</div>
+<div class="container" >
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                    <img class="card-img-top" src="./img/swiss.jpg" width="100%" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Swiss Barber</h4>
+                    <p class="card-text">Erkek Kuaförü/Kadın Kuaförü</p>
+                    <h6>Adapazarı/Sakarya</h6>
+                </div>
+            </div>   
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                    <img class="card-img-top" src="./img/boutique.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Boutique Fit Lady</h4>
+                    <p class="card-text">Spor Salonu, Pilates Stüdyosu</p>
+                    <h6>Serdivan/Sakarya</h6>
+                </div>
+            </div>   
+        </div>
+    </div>
+</div>
+<div class="aciklama">
     <div class="container ">
         <div class="row">
             <div class="col-lg-8">
@@ -169,32 +185,30 @@
                 </button>
             </div>
             <div class="col-lg-4">
-                    <img src="./img/iphone.png" alt="">
-                </div>
+                <img src="./img/iphone.png" alt="">
             </div>
         </div>
     </div>
-    <div class="aciklama">
-            <div class="container ">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <h2>Müşterileriniz Sizin Uygulamanızı Kullansın.</h2>
-                        <p>Bunun yanında dilerseniz salon işletmenizin adı ile iOS ve Android uygulama sağlayabiliriz. Profesyonel işinize Profesyonel uygulama...</p>
-                        <button class="apple">
-                                <span class="iconify" data-icon="ant-design:apple-fill" data-inline="false"> </span>Download APP Store
-                        </button>
-                        <button class="android">
-                                <span class="iconify" data-icon="ant-design:android-fill" data-inline="false"></span>Download Android
-                        </button>
-                    </div>
-                    <div class="col-lg-4">
-                            <img src="./img/iphone2.png" alt="">
-                        </div>
-                    </div>
-                </div>
+</div>
+<div class="aciklama">
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-8">
+                <h2>Müşterileriniz Sizin Uygulamanızı Kullansın.</h2>
+                <p>Bunun yanında dilerseniz salon işletmenizin adı ile iOS ve Android uygulama sağlayabiliriz. Profesyonel işinize Profesyonel uygulama...</p>
+                <button class="apple">
+                        <span class="iconify" data-icon="ant-design:apple-fill" data-inline="false"> </span>Download APP Store
+                </button>
+                <button class="android">
+                        <span class="iconify" data-icon="ant-design:android-fill" data-inline="false"></span>Download Android
+                </button>
             </div>
-        
-
-    
+            <div class="col-lg-4">
+                <img src="./img/iphone2.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<script src='/js/main.js'></script>
 </body>
 </html>

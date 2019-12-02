@@ -10,11 +10,11 @@ body {
     width: 100%;
     height: 80px;
     background: white;
+    position: sticky;
+    top: 0;
+    z-index: 7;
 }
-.col-sm-2 img {
-    top: 15px;
-}
-.col-sm-10  {
+.menu  {
     list-style: none;
     text-decoration: none;
     top: 25px;
@@ -43,7 +43,6 @@ body {
 .white-bg  {
     background: white;
     width: 100%;
-    height: 280px;
     border-radius: 8px ;
     box-shadow: 2px 2px 2px 2px rgb(134, 133, 133);
 
@@ -133,20 +132,81 @@ h6 {
     transition: 0.5s;
 }
 .search-button {
-    position: absolute;
     background: green;
     border: 1px solid green;
     color: white;
-    width: 70%;
-    left: 0;
-    top: 50%;
-    padding: 0px;
-    margin: 0px;
+    width: 95%;
     border-radius: 5px ;
-    justify-items: center;
     transition: 2s;
 }
 .search-button:hover {
     transform: scale(1.15);
     transition: 2s;
+}
+.hamburger{
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    right: 5%;
+    top: 5%;
+    transform: translate(-5%, -50%);
+    z-index: 8;
+}
+.line {
+    width: 30px;
+    height: 2px;
+    background: black;
+    margin: 5px;
+    border-radius: 5px;
+    transition: all .5s ease-out;
+}
+.line.activeLine1 {
+    transform: translate( 0, 7px) rotate(405deg);
+    top: 0;
+    transition: all .5s ease-out;
+}
+.line.activeLine2 {
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+.line.activeLine3 {
+    transform: translate( 0, -7px) rotate(-405deg);
+    transition: all .5s ease-out;
+}
+
+.mobile-menu {
+    height: 0;
+    width: 100vw;
+    background: white;
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+    padding: 0;
+    z-index: 7;
+    left: 0;
+}
+.mobile-menu li{
+    margin: 10px;
+}
+
+.mobile-menu li a{
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 576px){
+    .hamburger{
+        display: inline;
+    }
+    .menu{
+        display: none;
+    }
+    .mobile-menu{
+        transition: 1s;
+        position: fixed;
+    }
+    .mobile-menu.active {
+        height: 100vh;
+        transition: 1s;
+    }
 }
